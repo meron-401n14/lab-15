@@ -13,10 +13,14 @@ const alterFile = event => {
   console.log(event);
 };
 
+const saveFile = event => {
+  console.log(event);
+};
 
 
+emitter.on('fileSaved', saveFile);
 emitter.on('file-error', logError);
-emitter.on('alter file', alterFile);
+emitter.on('status file', alterFile);
 console.log('Set our Listeners');
 
 module.exports = {};

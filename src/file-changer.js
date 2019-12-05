@@ -12,8 +12,10 @@ const writeFile = util.promisify(fs.writeFile);
 const loadFile = async (path) => {
   console.log('In load File!');
   try {
-    return await readFile(path);
-    //return  contents;
+    let contents = await readFile(path);
+    console.log(contents);
+    //return await readFile(path);
+    return  contents;
   }catch(e) {
     throw e;
   }
@@ -22,8 +24,8 @@ const loadFile = async (path) => {
  const saveFile =  async file => {
    console.log('in save file');
    try{
-     let contents = await readFile(file);
-     console.log(contents);
+    //  let contents = await readFile(file);
+    //  console.log(contents);
      return await writeFile(file, faker.lorem.sentence());
     
     } catch (e){
@@ -39,9 +41,9 @@ const loadFile = async (path) => {
       await saveFile(file);
     } catch(err) {
       if(!err)
-      emitter.emit(' On success',  {status: 1, message: saveFile(file)});
-      //   console.log(data);
-      // })
+     // emitter.emit(' On success', {status: 1, message: saveFile(file)})
+      emitter.emit('fileSaved', saveFile)
+      
       else  emitter.emit('file-error', {status:0, message: err.message});
     }
   }
