@@ -7,7 +7,7 @@ Event Driven Applications
 ### Author: Meron
 
 ### Links and Resources
-* [submission PR](https://github.com/meron-401n14/lab-15/pull/1)
+* [submission PR](https://github.com/meron-401n14/lab-15/pull/2)
 #### Documentation
 * [jsdoc](comments only)
 
