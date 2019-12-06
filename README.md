@@ -8,29 +8,28 @@ Event Driven Applications
 
 ### Links and Resources
 * [submission PR](https://github.com/meron-401n14/lab-15/pull/1)
-
-
-
 #### Documentation
 * [jsdoc](comments only)
-* [styleguide](https://github.com/shri/JSDoc-Style-Guide#functions)
-
 
 ### Modules
-
-#### models
-
-
-### Setup
-#### `.env` requirements
-
-
 #### Running the app
+* node app.js <path-to-my-file>
 
 #### Tests
-
+npm test 
 
 #### UML
-Link to an image of the UML for your application and response to events
+* [UML Lab15](lab-15(async).jpg)
+
+
+
+
+
+
+
+
+
+
+
 
 
