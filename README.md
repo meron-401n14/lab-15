@@ -8,11 +8,13 @@ Event Driven Applications
 
 ### Links and Resources
 * [submission PR](https://github.com/meron-401n14/lab-15/pull/2)
+
 #### Documentation
+
 * [jsdoc](comments only)
 
-### Modules
-#### Running the app
+
+###### Running the app
 * node app.js <path-to-my-file>
 
 #### Tests
